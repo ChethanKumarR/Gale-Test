@@ -1,0 +1,56 @@
+{
+  "return_code": 0,
+  "result": {
+    "products_count": 6,
+    "product": [
+      {
+        "id": "1",
+        "name": "Item One",
+        "price": 24.99,
+        "image_url": "http://placehold.it/700x500",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
+        "rating": "*****"
+      },
+      {
+        "id": "2",
+        "name": "Item Two",
+        "price": 24.99,
+        "image_url": "http://placehold.it/700x500",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
+        "rating": "*****"
+      },
+      {
+        "id": "3",
+        "name": "Item Three",
+        "price": 24.99,
+        "image_url": "http://placehold.it/700x500",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
+        "rating": "*****"
+      },
+      {
+        "id": "4",
+        "name": "Item Four",
+        "price": 24.99,
+        "image_url": "http://placehold.it/700x500",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
+        "rating": "*****"
+      },
+      {
+        "id": "5",
+        "name": "Item Five",
+        "price": 24.99,
+        "image_url": "http://placehold.it/700x500",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
+        "rating": "*****"
+      },
+      {
+        "id": "6",
+        "name": "Item Six",
+        "price": 24.99,
+        "image_url": "http://placehold.it/700x500",
+        "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
+        "rating": "*****"
+      }
+    ]
+  }
+}

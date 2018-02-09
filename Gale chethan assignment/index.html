@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   .box {
+	    height: 400px;
+	    width: 1200px;
+	    background-color: #c0c0c0;
+	    margin-left: 80px;
+	    margin-right: 70px;
+	    
+       }
+       #div1
+       {
+       	 margin-top: 30px;
+         height: 200px;
+         width: 380px;
+         margin-left: 95px;
+
+       }
+       #div2
+       {
+       	 margin-top: 30px;
+         height: 200px;
+         width: 380px;
+         margin-left: 30px;
+
+       }
+       #div3
+       {
+       	 margin-top: 30px;
+         height: 200px;
+         width: 380px;
+         margin-left: 30px;
+
+       }
+       .center 
+       {
+		  text-align: center;
+       }
+       .footer
+       {
+       	 margin-top: 50px;
+       }
+  
+  </style>
+</head>
+<body data ng-app="myapp">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="margin-left: 50px">ABC.com</a>
+    </div>
+    <ul class="nav navbar-nav" style="float: right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">services</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<div class="box">
+	<h4>PLACE HOLDER</h4>
+</div>
+<div class="row">
+    <div class="col-sm-3 center" id="div1" style="background-color: #c0c0c0; padding: 80px">700 X 500
+    <br>
+    <br>
+    <br>
+    <input type="number" placeholder="Enter the id" ng-model="id">
+    <button ng-click="fetch()">put</button>
+   </div>
+
+    <div class="col-sm-6 center" id="div2" style="background-color: #c0c0c0; padding: 80px">700 X 500
+     <br>
+     <br>
+     <br>
+    <input type="number" placeholder="Enter the id" ng-model="id">
+    <button ng-click="fetch()">put</button>
+</div>
+
+    <div class="col-sm-3 center" id="div3" style="background-color: #c0c0c0; padding: 80px">700 X 500
+     <br>
+     <br>
+     <br>
+    <input type="number" placeholder="Enter the id" ng-model="id">
+    <button ng-click="fetch()">put</button>
+</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 center" id="div1" style="background-color: #c0c0c0; padding: 80px">700 X 500
+     <br>
+     <br>
+     <br>
+    <input type="number" placeholder="Enter the id" ng-model="id">
+    <button ng-click="fetch()">put</button>
+</div>
+    <div class="col-sm-6 center" id="div2" style="background-color: #c0c0c0;padding: 80px;padding: 80px">700 X 500
+     <br>
+     <br>
+     <br>
+    <input type="number" placeholder="Enter the id" ng-model="id">
+    <button ng-click="fetch()">put</button>
+</div>
+    <div class="col-sm-3 center" id="div3" style="background-color: #c0c0c0;padding: 80px">700 X 500
+     <br>
+     <br>
+     <br>
+    <input type="number" placeholder="Enter the id" ng-model="id">
+    <button ng-click="fetch()">put</button>
+</div>
+  </div>
+ 
+  <div ng-controller="restcontroller" >
+  <table border="8" cellspacing="12" cellpadding="14" id="all-comments" style="color: red; margin-left: 10px; margin-top: 40px; padding: 10px; width:100%">
+  	 <tr>
+  	 	  <th>id</th>
+		  <th>name</th>
+		  <th>price</th>
+		  <th>image_url</th>
+		  <th>Description</th>
+		  <th>rating</th>
+	</tr>
+
+	<tr>
+		<td>{{person.id}}</td>
+		<td>{{person.name}}</td>
+		<td>{{person.price}}</td>
+		<td>{{person.image_url}}</td>
+		<td>{{person.Description}}</td>
+		<td>{{person.rating}}</td>
+    </tr>
+  </table>
+  <nav class="navbar navbar-inverse footer">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="margin-left: 500px; padding:20px ; margin-bottom:10px">copyright@ Your Website 2018</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- <script src="bower_components/angular/angular.js"></script>
+    	<script src="bower_components/angular-resource/angular-resource.js"></script> -->
+    	
+  </div>
+  
+
+    <script type="text/javascript">
+    	/*var request = new XMLHttpRequest();
+    	request.open('GET', requestURL);
+    	request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+        var superHeroes = request.response;
+        populateHeader(superHeroes);
+        showHeroes(superHeroes);
+
+        function populateHeader(jsonObj) {
+			  var myH1 = document.createElement('h1');
+			  myH1.textContent = jsonObj['squadName'];
+			  header.appendChild(myH1);
+
+			  var myPara = document.createElement('p');
+			  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+			  header.appendChild(myPara);
+        }*/
+
+        var app = angular.module('myapp',['ngResource']);
+		app.factory('Entry' , function($resource)
+		{
+            return $resource('http://www.mocky.io/v2/5a7acdc0300000120028bb6e/result/:id', {},
+             {
+             	'update': { method:'PUT',
+             				url: 'http://www.mocky.io/v2/5a7acdc0300000120028bb6e/result/:id' }
+             });
+
+            return $resource('http://www.mocky.io/v2/5a7acdc0300000120028bb6e/result/:id' ,{},
+            {
+            	'save':{method:'POST' ,
+                    url:'http://www.mocky.io/v2/5a7acdc0300000120028bb6e/result/:id'}
+            });
+		});
+
+		app.controller('restcontroller', function($scope , Entry) {
+	       
+	        $scope.entries= null;
+		 	$scope.singleComment = null;
+			 	 	
+		 	$scope.updatedperson={};
+		 	$scope.postperson={};
+
+		 	$scope.fetch = function(id) {
+		 		$scope.person = Entry.get({id:$scope.id});
+		 	};
+		
+		 	$scope.fetchAll = function() {
+		 		$scope.entries = Entry.query();
+		 		/*console.log($scope.entries);*/
+		 	};
+
+		 });
+    </script>
+    <script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+</body>
+</html>
